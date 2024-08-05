@@ -22,3 +22,9 @@ button {
   padding: 8px 12px;
   cursor: pointer;
 }
+
+.exercitiul_3_ul {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}

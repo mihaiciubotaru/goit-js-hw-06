@@ -1,3 +1,5 @@
+"use strict";
+
 const images = [
   {
     url: 'https://images.pexels.com/photos/140134/pexels-photo-140134.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
@@ -12,3 +14,9 @@ const images = [
     alt: 'Group of Horses Running',
   },
 ];
+
+const ul = document.getElementsByTagName("ul");
+ul[0].classList.add("exercitiul_3_ul");
+for(let img of images){
+  ul[0].insertAdjacentHTML("afterbegin",`<li><img src="${img.url}" alt="${img.alt}" width=100%></li>`);
+}
